@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(229, 242, 180);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.piano-container{
+    display: flex;
+    position: relative;
+    background-color: rgb(93, 2, 178);
+    border: 20px solid rgb(93, 2, 178);
+    border-radius: 25px;
+    padding: 15px;
+    width: 80vw;
+    height: 58vh;
+    box-shadow: 12px 12px 20px rgba(0,0,0,0.8),-12px -12px 15px rgb(246, 243, 243);
+}
+.piano-container .mySignature{
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    z-index: 5;
+    font-weight: 800;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.piano-container .white-key-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+}
+.piano-container .white-key-container .white-key{
+    flex-basis: 5%;
+    background: white;
+    height: 100%;
+    box-shadow: 4px 6px 7px rgba(0,0,0,0.8);
+    border: 3px solid black;
+}
+.piano-container .white-key-container .white-key:hover{
+    background: linear-gradient(
+        180deg,
+        rgb(237, 231, 228) 26%,
+        rgb(63, 64, 68) 86%
+    );
+    border-bottom: none;
+
+
+}
+.piano-container .black-key-container{
+    display: flex;
+    position: absolute;
+    width: 97%;
+    height: 60%;
+}
+.piano-container .black-key-container .black-key{
+    position: absolute;
+    height: 100%;
+    width: 45px;
+    background: #000;
+
+}
+.piano-container .black-key-container .black-key:hover{
+    background: linear-gradient(
+        180deg,
+        rgb(60, 57, 55) 26%,
+        rgb(14, 101, 34) 70%
+    );
+    transform: translateY(20px);
+
+
+}
+.black-1{
+    left: 20px;
+}
+.black-2{
+    left:70px;
+}
+.black-3{
+    left: 170px;
+}
+.black-4{
+    left: 220px;
+}
+.black-5{
+    left: 270px;
+}
+.black-6{
+    left: 370px;
+}
+.black-7{
+    left: 420px;
+}
+.black-8{
+    left: 520px;
+}
+.black-9{
+    left: 570px;
+}
+.black-10{
+    right: 320px;
+}
+.black-11{
+    right: 270px;
+}
+.black-12{
+    right: 218px;
+}
+.black-13{
+    right: 120px;
+}
+.black-14{
+    right: 70px;
+}
+.black-15{
+    right: 20px;
+}
+
+
+
